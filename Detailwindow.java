@@ -1,0 +1,2 @@
+class Detailwindow extends Window{
+}
