@@ -1,5 +1,6 @@
 class PersonenautoFactory extends CreateProductFactory {
-    public Personenauto createPersonenauto() {
-        return super.createPersonenauto();
+    @Override
+    public Personenauto createPersonenauto(String merk, String type, String beschrijving, double gewicht, double motorinhoud) {
+        return super.createPersonenauto(merk, type, beschrijving, gewicht, motorinhoud);
     }
 }

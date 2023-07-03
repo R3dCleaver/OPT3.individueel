@@ -1,17 +1,17 @@
 abstract class CreateProductFactory implements ProductFactory{
 
     @Override
-    public Boormachine createBoormachine() {
-        return new Boormachine("","","");
+    public Boormachine createBoormachine(String merk, String type, String beschrijving) {
+        return new Boormachine(merk, type, beschrijving);
     }
 
     @Override
-    public Personenauto createPersonenauto() {
-        return new Personenauto("","","",0,0);
+    public Personenauto createPersonenauto(String merk, String type, String beschrijving, double gewicht, double motorinhoud) {
+        return new Personenauto(merk, type, beschrijving, gewicht, motorinhoud);
     }
 
     @Override
-    public Vrachtwagen createVrachtwagen() {
-        return new Vrachtwagen("","","",0,0);
+    public Vrachtwagen createVrachtwagen(String merk, String type, String beschrijving, double laadvermogen, double motorinhoud) {
+        return new Vrachtwagen(merk, type, beschrijving, laadvermogen, motorinhoud);
     }
 }
